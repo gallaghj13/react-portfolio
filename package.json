@@ -2,7 +2,7 @@
   "name": "john-gallagher-react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://gallaghj13.github.io/john-gallagher-react-portfolio",
+  "homepage": "http://gallaghj13.github.io/react-portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
