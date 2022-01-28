@@ -14,7 +14,7 @@ export default function About() {
                 industry, I realized that it was time for me to move on. I thought of learning how to code because
                 of friends in the industry. They encouraged me to pursue coding, so, here I am in the DU coding bootcamp.
                 My favorite part of learning web development has been the problem solving aspect. There is nothing
-                more satisfying than figuring out a problem.
+                more satisfying than figuring out a problem. Test
             </p>
         </div>
     )
