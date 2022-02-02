@@ -1,7 +1,8 @@
 import React from 'react';
+
 function NavBar ({ currentPage, handlePageChange }) {
     return (
-        <ul className="nav nav-tabs">
+        <ul className="nav justify-content-end">
         <li className="nav-item">
           <a
             href="/about"
@@ -14,7 +15,7 @@ function NavBar ({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <a
             href="/projects"
-            onClick={() => handlePageChange('')}
+            onClick={() => handlePageChange('Projects')}
             className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
           >
             Projects
@@ -22,7 +23,7 @@ function NavBar ({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item">
           <a
-            href="#Resume"
+            href="/resume"
             onClick={() => handlePageChange('Resume')}
             className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
           >
@@ -31,7 +32,7 @@ function NavBar ({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item">
           <a
-            href="#contact"
+            href="/contact"
             onClick={() => handlePageChange('Contact')}
             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
           >
