@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../styles/About.css';
 
 export default function About() {
     return (
-        <div>
+        <div className="aboutContainer">
             <h1>About Me:</h1>
             <p>
                 I moved out to Boulder, Colorado from Lancaster, Pennsylvania in 2015 because I wanted to live
@@ -14,8 +15,8 @@ export default function About() {
                 industry, I realized that it was time for me to move on. I thought of learning how to code because
                 of friends in the industry. They encouraged me to pursue coding, so, here I am in the DU coding bootcamp.
                 My favorite part of learning web development has been the problem solving aspect. There is nothing
-                more satisfying than figuring out a problem. Test
+                more satisfying than figuring out a problem.
             </p>
         </div>
-    )
+    );
 };
