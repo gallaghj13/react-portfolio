@@ -1,0 +1,14 @@
+.contactContainer {
+    background: #EDF5E1;
+    height: 50rem;
+}
+
+.contactContainer form {
+    width: 50%;
+    margin-left: 4rem;
+}
+
+.contactContainer h1 {
+    margin: 0 0 1rem 2rem;
+    padding-top: 2rem;
+}
