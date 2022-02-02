@@ -1,0 +1,18 @@
+.aboutContainer {
+    background: #EDF5E1;
+    height: 50rem;
+}
+
+.aboutContainer h1 {
+    margin-left: 2rem;
+    padding-top: 2rem;
+    color: #05386B;
+}
+
+.aboutContainer p {
+    margin-left: 2rem;
+    width: 50%;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: #05386B;
+}
