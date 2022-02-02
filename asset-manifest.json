@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.8620f846.css",
+    "main.js": "/react-portfolio/static/js/main.2e6c28f8.js",
+    "static/media/marvelbackground.jpg": "/react-portfolio/static/media/marvelbackground.ae09eb8ad009f9b5ee1c.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.8620f846.css.map": "/react-portfolio/static/css/main.8620f846.css.map",
+    "main.2e6c28f8.js.map": "/react-portfolio/static/js/main.2e6c28f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8620f846.css",
+    "static/js/main.2e6c28f8.js"
+  ]
+}
