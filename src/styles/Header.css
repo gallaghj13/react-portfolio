@@ -1,0 +1,24 @@
+.headerContainer {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    background: #557A95;
+    height: 10%;
+    border-bottom: solid #05386B;
+    align-items: center;
+}
+
+.header h1 {
+    text-align: left;
+    color: #EDF5E1;
+    margin-left: 2rem;
+}
+
+.header li a {
+    font-size: 1.4rem;
+    color: #EDF5E1;
+    justify-content: center;
+}
