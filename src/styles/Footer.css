@@ -1,7 +1,7 @@
 .footerContainer {
     background: #557A95;
     border-top: solid #05386B;
-    height: 8rem;
+    height: 6rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
@@ -26,7 +26,7 @@
 .footerContainer li {
     color: #EDF5E1;
     text-align: right;
-    font-size: 2rem;
+    font-size: 1.4rem;
     justify-content: center;
 }
 
