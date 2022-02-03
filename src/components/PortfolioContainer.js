@@ -8,7 +8,7 @@ import Footer from './Footer';
 import {Routes, Route, BrowserRouter as Router} from 'react-router-dom';
 
 export default function PortfolioContainer() {
-    const [currentPage, setCurrentPage] = useState('About');
+    const [currentPage, setCurrentPage] = useState('');
   
     const handlePageChange = (page) => setCurrentPage(page);
   
@@ -17,10 +17,11 @@ export default function PortfolioContainer() {
       <div>
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
         <Routes>
-            <Route path='/projects' element= {<Projects/>} />
-            <Route path='/about' element= {<About/>} />
-            <Route path='/contact' element= {<Contact/>} />
-            <Route path='/resume' element= {<Resume/>} />
+            <Route exact path='/projects' element= {<Projects />} />
+            <Route exact path='react-portfolio/' element= {<About />} />
+            <Route exact path='/about' element= {<About />} />
+            <Route exact path='/contact' element= {<Contact />} />
+            <Route exact path='/resume' element= {<Resume />} />
         </Routes>
         <Footer />
       </div>
