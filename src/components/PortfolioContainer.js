@@ -13,8 +13,8 @@ export default function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
   
     return (
-    <Router>
       <div>
+    <Router>
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
         <Routes>
             <Route exact path='/projects' element= {<Projects />} />
@@ -24,7 +24,7 @@ export default function PortfolioContainer() {
             <Route exact path='/resume' element= {<Resume />} />
         </Routes>
         <Footer />
-      </div>
     </Router>
+    </div>
     );
   }

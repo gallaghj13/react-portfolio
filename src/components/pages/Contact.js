@@ -6,12 +6,14 @@ import '../../styles/Contact.css';
 function Contact() {
   const form = useRef();
 
-  const [email, setEmail] = useState('');
-  const [userName, setUserName] = useState('');
-  const [message, setMessage] = useState('');
+//   const [email, setEmail] = useState('');
+//   const [userName, setUserName] = useState('');
+//   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [formState, setFormState] = useState({user_email: '', user_name: '', message: ''});
+  const { user_name, user_email, message } = setFormState; 
 
-  const handleChange = (e) => {
+  const handleBlur = (e) => {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
@@ -21,21 +23,31 @@ function Contact() {
         if(!validateEmail(inputValue)) {
             setErrorMessage('Email is invalid');
         } else {
-            setEmail(inputValue);
+            setErrorMessage('')
         }
     } else if (inputType === 'user_name') {
         if(!inputValue.length) {
             setErrorMessage('Name field is required');
         } else {
-            setUserName(inputValue);
+            setErrorMessage('')
         }
     } else {
         if(!inputValue.length) {
             setErrorMessage('Please leave a message!');
         } else {
-            setMessage(inputValue);
+            setErrorMessage('')
         }
     }
+  }
+
+  const handleChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    setFormState({...formState, [inputType]: inputValue})
+
+    console.log(formState)
   };
 
   const sendEmail = (e) => {
@@ -48,27 +60,24 @@ function Contact() {
           console.log(error.text);
       });
 
-      setEmail('');
-      setUserName('');
-      setMessage('');
-      setErrorMessage('');
+      setFormState({email: '', name: '', message: ''})
   };
 
   return (
-      <div className="contactContainer">
+      <div className="contactContainer"> 
           <h1>Contact:</h1>
         <form ref={form} onSubmit={sendEmail}>
         <div className="mb-3">
             <label for="formGroupExampleInput" className="form-label">Name</label>
-            <input value={userName} type="text" name="user_name" onChange={handleChange} className="form-control" id="formGroupExampleInput" placeholder="Name"/>
+            <input defaultValue={user_name} type="text" name="user_name" onChange={handleChange} className="form-control" id="formGroupExampleInput" placeholder="Name"/>
         </div>
         <div className="mb-3">
             <label for="formGroupExampleInput2" className="form-label">Email</label>
-            <input value={email} type="email" name="user_email" onChange={handleChange} className="form-control" id="formGroupExampleInput2" placeholder="Email"/>
+            <input defaultValue={user_email} type="email" name="user_email" onChange={handleChange} onBlur={handleBlur} className="form-control" id="formGroupExampleInput2" placeholder="Email"/>
         </div>
         <div className="mb-3">
             <label for="formGroupExampleInput" className="form-label">Message</label>
-            <textarea value={message} name="message" onChange={handleChange} className="form-control" id="formGroupExampleInput" placeholder="Leave Message Here"/>
+            <textarea defaultValue={message} name="message" onChange={handleChange} className="form-control" id="formGroupExampleInput" placeholder="Leave Message Here"/>
             <input type="submit" value="Send Message" />
         </div>
         </form>

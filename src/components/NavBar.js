@@ -1,17 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+const style = {
+  linkStyle: {
+    textDecoration: 'none'
+  }
+}
 
 function NavBar ({ currentPage, handlePageChange }) {
     return (
         <ul className="nav justify-content-end">
-        <li className="nav-item">
-          <a
+         <Link to="/about"
+         style={style.linkStyle}> 
+         <li className="nav-item">
+         <a
             href="/about"
             onClick={() => handlePageChange('About')}
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
           >
             About
           </a>
-        </li>
+          </li>
+          </Link>
+          <Link to="/projects"
+            style={style.linkStyle}>
         <li className="nav-item">
           <a
             href="/projects"
@@ -21,6 +33,10 @@ function NavBar ({ currentPage, handlePageChange }) {
             Projects
           </a>
         </li>
+        </Link>
+        <Link to="/resume"
+        style={style.linkStyle}
+        >
         <li className="nav-item">
           <a
             href="/resume"
@@ -30,6 +46,9 @@ function NavBar ({ currentPage, handlePageChange }) {
             Resume
           </a>
         </li>
+        </Link>
+        <Link to="/contact"
+        style={style.linkStyle}>
         <li className="nav-item">
           <a
             href="/contact"
@@ -39,6 +58,7 @@ function NavBar ({ currentPage, handlePageChange }) {
             Contact
           </a>
         </li>
+        </Link>
       </ul>
     )
 };

@@ -1,9 +1,13 @@
 .projectContainer {
     background: #EDF5E1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .card {
-    border: 4px solid #05386B;
+    margin: 5%;
+    border: 10px solid #05386B;
 }
 
 .card-body {

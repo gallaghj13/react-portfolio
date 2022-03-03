@@ -1,4 +1,56 @@
 .resumeContainer {
     background: #EDF5E1;
-    height: 50rem;
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+    /* margin-bottom: 15%; */
+}
+
+h1, h2, p {
+    color: #05386B;
+}
+
+.resumeSectionHeader {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 7%;
+}
+
+.resumeBody {
+    display: flex;
+    /* flex: 1 0 100%; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.resumeSection {
+    text-align: center;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.resumeBtn {
+    text-align: center;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.resumeBtn a {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #05386B;
+    width: fit-content;
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 1550px) {
+    .resumeSection {
+        width: 750px;
+        font-size: x-large ;
+    }
 }
