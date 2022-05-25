@@ -1,6 +1,6 @@
 .aboutContainer {
     background: #EDF5E1;
-    height: 50rem;
+    display: inline-flex;
 }
 
 .aboutContainer h1 {
@@ -10,10 +10,20 @@
 }
 
 .aboutContainer p {
-    padding-top: 4rem;
-    margin-left: 3rem;
-    width: 50%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-left: 5rem;
+    width: 60%;
     font-size: 1.2rem;
     line-height: 3rem;
     color: #05386B;
+}
+
+.imgContainer {
+    height: 400px;
+    margin: 8% 10% 7% 0;
+}
+
+img {
+    height: 400px;
 }
