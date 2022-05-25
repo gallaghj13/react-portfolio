@@ -3,7 +3,6 @@
     display: flexbox;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 100vh;
     /* margin-bottom: 15%; */
 }
 
@@ -34,7 +33,7 @@ h1, h2, p {
 
 .resumeBtn {
     text-align: center;
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 350px;
 }
 
