@@ -1,21 +1,19 @@
 import React from 'react';
 import '../../styles/About.css';
+import headshot from '../../images/headshot.png'
 
 export default function About() {
     return (
         <div className="aboutContainer">
-            <p>
-                I moved out to Boulder, Colorado from Lancaster, Pennsylvania in 2015 because I wanted to live
-                in the mountains. I took a job in a restaraunt to make ends meet while I spent as much time as I
-                could climbing. So, for the past six years I've been bartending and managing at the Dark Horse in 
-                Boulder. 
-                <br></br>
-                Over the past year, with the pandemic, and the subsequent shutdowns and restrictions on the service
-                industry, I realized that it was time for me to move on. I thought of learning how to code because
-                of friends in the industry. They encouraged me to pursue coding, so, here I am in the DU coding bootcamp.
-                My favorite part of learning web development has been the problem solving aspect. There is nothing
-                more satisfying than solving a problem.
-            </p>
+            <div>
+                <p>
+                   Full stack web developer with experience in JavaScript, HTML, CSS, SQL, and MERN stack. Recently earned a certificate in full stack development with a focus on JavaScript from the University of Denver. Interested in the back end of applications and working with data, but also feel comfortable working on the front end of applications. With a college background in Economics and management experience in a restaurant, I have always excelled in critical thinking and problem solving. I'm not only interested in finding a solution, but rather the best, most efficient solution. I am drawn to coding because it promises to keep changing, allowing me to continue to learn and grow as a developer.
+                </p>
+            </div>
+
+            <div className="imgContainer">
+                <img src={headshot} alt="Headshot of the creator of this page"/>
+            </div>
         </div>
     );
 };
