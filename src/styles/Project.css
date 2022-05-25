@@ -8,6 +8,8 @@
 .card {
     margin: 5%;
     border: 10px solid #05386B;
+    width: 23rem;
+    height: 40rem;
 }
 
 .card-body {
@@ -17,4 +19,9 @@
 
 .card-body h5 p {
     color: #EDF5E1;
+}
+
+.btn-primary {
+    margin: 3% 0 0 11%;
+    width: 75%;
 }
